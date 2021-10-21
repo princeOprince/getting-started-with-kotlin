@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.32'
+}
+
+group 'com.princeoprince'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.5.30"
+
+//    testImplementation 'org.junit:junit5-api:5.2.0'
+//    testImplementation 'org.jetbrains.spek:spek-api:2.0.15'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+
+    testImplementation 'com.nhaarman:mockito-kotlin:1.6.0'
+    testImplementation 'com.natpryce:hamkrest:1.2.2.0'
+
+    testImplementation "org.spekframework.spek2:spek-dsl-jvm:2.0.17"
+    testImplementation "org.spekframework.spek2:spek-runner-junit5:2.0.17"
+
+//    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.0.0-M2'
+//    testRuntimeOnly 'org.jetbrains.spek:spek-junit-platform-engine:2.0.15'
+}
+
+// setup the test task
+test {
+    useJUnitPlatform {
+        includeEngines 'spek2'
+    }
+}

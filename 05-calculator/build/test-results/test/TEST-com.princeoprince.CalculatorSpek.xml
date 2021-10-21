@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.princeoprince.CalculatorSpek" tests="4" skipped="0" failures="1" errors="0" timestamp="2021-10-21T12:29:08" hostname="PRINCE-E1764" time="0.341">
+  <properties/>
+  <testcase name="should add two numbers" classname="com.princeoprince.CalculatorSpek" time="0.114"/>
+  <testcase name="should accumulate one number" classname="com.princeoprince.CalculatorSpek" time="0.02"/>
+  <testcase name="should accumulate two number" classname="com.princeoprince.CalculatorSpek" time="0.006"/>
+  <testcase name="should write the output amount" classname="com.princeoprince.CalculatorSpek" time="0.155">
+    <failure message="Wanted but not invoked:&#10;result.write(23);&#10;-&gt; at com.princeoprince.CalculatorSpek$1$2$1.invoke(CalculatorSpek.kt:44)&#10;Actually, there were zero interactions with this mock.&#10;" type="org.mockito.exceptions.verification.WantedButNotInvoked">Wanted but not invoked:
+result.write(23);
+-&gt; at com.princeoprince.CalculatorSpek$1$2$1.invoke(CalculatorSpek.kt:44)
+Actually, there were zero interactions with this mock.
+
+	at com.princeoprince.CalculatorSpek$1$2$1.invoke(CalculatorSpek.kt:44)
+	at com.princeoprince.CalculatorSpek$1$2$1.invoke(CalculatorSpek.kt:9)
+	at org.spekframework.spek2.runtime.scope.TestScopeImpl.execute(scopes.kt:136)
+	at org.spekframework.spek2.runtime.Executor$execute$result$2$exception$1$job$1.invokeSuspend(Executor.kt:84)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:274)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:84)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
+	at org.spekframework.spek2.runtime.TaskRunner$runTask$1.run(executors.kt:26)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
